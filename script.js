@@ -29,8 +29,9 @@ function make_member(DATA) {
 function make_matkul(DATA) {
     const matkul_grid = document.querySelectorAll(".list-card")[0];
     DATA.forEach((data) => {
-        const div = document.createElement('div');
+        const div = document.createElement('a');
         div.className = "list-item";
+        div.href = data.LINK;
         div.innerHTML = `<div class="icon-box">${data.LOGO}</div><div><h4>${data.NAME}</h4><p>${data.DESCRIPTION}</p></div><div class="sem">${data.SEMESTER}</div>`;
         matkul_grid.append(div);
     })

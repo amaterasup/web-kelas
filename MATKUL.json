@@ -3,12 +3,21 @@
         "NAME":"ALGORITMA & PEMOGRAMAN",
         "LOGO":"⟨/⟩",
         "DESCRIPTION":"Kelas Teori Pemograman",
-        "SEMESTER":"SEM 1"
+        "SEMESTER":"SEM 1",
+        "LINK":"https://it.ilearn.unand.ac.id/course/view.php?id=358"
+    },
+    {
+        "NAME":"ALJABAR LINEAR",
+        "LOGO":"⟨/⟩",
+        "DESCRIPTION":"Kelas Pembunuhan",
+        "SEMESTER":"SEM 1",
+        "LINK":"https://it.ilearn.unand.ac.id/course/view.php?id=354"
     },
     {
         "NAME":"DLL",
         "LOGO":"-",
         "DESCRIPTION":"-",
-        "SEMESTER":"-"
+        "SEMESTER":"-",
+        "LINK":"-"
     }
 ]
