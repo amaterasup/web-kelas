@@ -1,11 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INFORMATIKA'26 — Angkatan Informatika Universitas Andalas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <p>bisaaaaaa</p>
+    <div class="circuit-bg"></div>
+
+    <header>
+        <nav>
+            <div class="brand">
+                <!-- <div class="brand-mark">IF</div> -->
+                <img src="unand_logo.png" alt="" class="logo">ACCOMBINATOR<span class="dot">'26</span>
+            </div>
+            <div class="nav-links">
+                <a href="#beranda" class="active">Beranda</a>
+                <a href="#anggota">Anggota</a>
+                <a href="#matkul">Matkul</a>
+                <a href="#proyek">Proyek</a>
+                <a href="#galeri">Galeri</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="beranda" class="hero">
+        <div>
+            <!-- <div class="eyebrow">fakultas-teknologi-informasi / universitas-andalas</div> -->
+            <h1>KELAS<span>ACCOMBINATOR</span></h1>
+            <p class="lead">Kumpulan mahasiswa Informatika Kelas A FTI Unand angkatan 2026 — belajar bareng, ngoding bareng, dan
+                tumbuh jadi developer yang siap kerja tim maupun kerja sendiri.</p>
+            <div class="tags">
+                <span class="tag">#kreatif</span>
+                <span class="tag">#kolaboratif</span>
+                <span class="tag">#problem-solver</span>
+            </div>
+            <div class="cta-row">
+                <a href="#anggota" class="btn btn-solid">Lihat Anggota →</a>
+                <a href="#kontak" class="btn btn-ghost">Hubungi Kami</a>
+            </div>
+            <div class="terminal">
+                <div class="terminal-bar"><span></span><span></span><span></span></div>
+                <div class="terminal-body">
+                    <div><span class="prompt">$</span> whoami</div>
+                    <div class="out">angkatan_informatika_2026<span class="caret"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-photo-frame">
+                <img src="FOTO ANGGOTA/Fairuz Ar Rasyd.png"
+                    alt="Foto angkatan">
+            </div>
+            <div class="float-card fc-1">
+                <div class="num">45</div>
+                <div class="lbl">MAHASISWA</div>
+            </div>
+            <div class="float-card fc-2">
+                <div class="num">14</div>
+                <div class="lbl">PROYEK AKTIF</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="tentang">
+        <div class="wrap about-grid reveal">
+            <div>
+                <!-- <div class="section-tag">tentang-kami</div> -->
+                <h2>Siapa Kami</h2>
+                <p>Kami adalah mahasiswa Program Studi Informatika, Fakultas Teknologi Informasi, Universitas Andalas,
+                    angkatan 2026. Berasal dari berbagai daerah di Sumatera dan sekitarnya, kami disatukan oleh minat
+                    yang sama: membangun sesuatu dengan kode.</p>
+            </div>
+            <div class="stat-grid">
+                <div class="stat-cell">
+                    <div class="num">45</div>
+                    <div class="lbl">TOTAL MAHASISWA</div>
+                </div>
+                <div class="stat-cell">
+                    <div class="num">1</div>
+                    <div class="lbl">SEMESTER DITEMPUH</div>
+                </div>
+                <div class="stat-cell">
+                    <div class="num">2</div>
+                    <div class="lbl">PROYEK KELAS</div>
+                </div>
+                <div class="stat-cell">
+                    <div class="num">1</div>
+                    <div class="lbl">KEGIATAN KELAS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="anggota">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <div>
+                    <!-- <div class="section-tag">anggota-kelas</div> -->
+                    <h2>Anggota Kelas</h2>
+                </div>
+            </div>
+            <div class="member-grid reveal">
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="matkul">
+        <div class="wrap two-col">
+            <div class="reveal">
+                <!-- <div class="section-tag">mata-kuliah</div> -->
+                <h2 style="margin-bottom:24px;">Mata Kuliah Semester Ini</h2>
+                <div class="list-card">
+                </div>
+            </div>
+
+            <div id="proyek" class="reveal">
+                <!-- <div class="section-tag">proyek-mahasiswa</div> -->
+                <h2 style="margin-bottom:24px;">Proyek Mahasiswa</h2>
+                <div style="display:flex; flex-direction:column; gap:16px;">
+                    <div class="project-card">
+                        <h4>-</h4>
+                        <p>-</p>
+                        <div class="stack-row"><span class="stack-pill">-</span><span
+                                class="stack-pill">-</span></div>
+                    </div>
+                    <!-- <div class="project-card">
+                        <h4>E-Commerce UNAND</h4>
+                        <p>Platform jual-beli untuk produk UMKM binaan mahasiswa Universitas Andalas.</p>
+                        <div class="stack-row"><span class="stack-pill">Laravel</span><span
+                                class="stack-pill">MySQL</span></div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Prediksi Kebakaran Hutan</h4>
+                        <p>Model machine learning untuk memprediksi risiko kebakaran hutan di Sumatera Barat.</p>
+                        <div class="stack-row"><span class="stack-pill">Python</span><span
+                                class="stack-pill">Scikit-learn</span></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="galeri">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <div>
+                    <!-- <div class="section-tag">galeri</div> -->
+                    <h2>Aktivitas & Galeri</h2>
+                </div>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item g1">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop"
+                        alt="Coding workshop">
+                    <div class="gallery-cap">coding-workshop.jpg</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section id="dosen">
+        <div class="wrap reveal">
+            <!-- <div class="section-tag">dosen-wali</div> -->
+            <h2 style="margin-bottom:24px;">Kaprodi</h2>
+            <div class="dosen-card">
+                <div class="dosen-photo"><img src="https://fti.unand.ac.id/images/Dokumen/Wahyudi.jpg"
+                        alt="Dr. Ir. Wahyudi, S.T, M.T"></div>
+                <div>
+                    <h3>Dr. Ir. Wahyudi, S.T, M.T</h3>
+                    <div class="role">kepala jurusan · program-studi-informatika</div>
+                    <blockquote>"Jangan hanya belajar untuk lulus — belajar untuk siap. Dunia kerja butuh orang yang
+                        bisa mikir, bukan cuma bisa hafal."</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div>
+                    <div class="brand" style="margin-bottom:14px;">
+                        <div class="brand-mark">IF</div>INFORMATIKA<span class="dot">'24</span>
+                    </div>
+                    <p style="max-width:320px;">Website profil Informatika Kelas A Universitas Andalas 2026. Dibuat
+                        oleh dan untuk mahasiswa.</p>
+                </div>
+                <div>
+                    <h4>navigasi</h4>
+                    <a href="#anggota">Anggota</a>
+                    <a href="#matkul">Mata Kuliah</a>
+                    <a href="#proyek">Proyek</a>
+                    <a href="#galeri">Galeri</a>
+                </div>
+                <div>
+                    <h4>kontak</h4>
+                    <a href="mailto:informatika24@unand.ac.id">-</a>
+                    <a href="https://www.instagram.com/acombinator26?igsi=MW05eWNvdmRwODVvdg==">@acombinator26</a>
+                    <p>Padang, Sumatera Barat</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>INFORMATIKA '26 — Fakultas Teknologi Informasi, Universitas Andalas</span>
+                <span>Padang, Sumatera Barat · unand.ac.id</span>
+            </div>
+        </div>
+        <div class="lightbox" id="lightbox">
+            <div class="close" id="close">&times;</div>
+            <img id="lightboxImage" src="" alt="">
+        </div>
+    </footer>
+
 </body>
+
 </html>
